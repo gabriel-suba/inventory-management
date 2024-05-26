@@ -1,5 +1,6 @@
 const Pool = require("pg").Pool;
 
+// TODO:: MOVE THIS TO A .ENV FILE
 const pool = new Pool({
     user: "me",
     host: "localhost",

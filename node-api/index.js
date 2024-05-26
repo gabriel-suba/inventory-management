@@ -14,6 +14,10 @@ app.get("/", (request, response) => {
     response.json({ info: "Node.js, Express, PostgreSQL" });
 });
 
+// TODO:: CREATE A FRONTEND FIRST
+// CRUD:: USERS, VENDORS, ITEMS, LOCATIONS
+// ALL DB:: USERS, VENDORS, ITEMS, LOCATIONS, ROLES, STATUS
+
 // get all items
 app.get("/items", db.getItems);
 
@@ -25,15 +29,6 @@ app.get("/users", db.getUsers);
 
 // get a user
 app.get("/users/:id", db.getUserById);
-
-// get an item
-// get a user
-
-// GET /users
-// app.get("/users", db.getUsers);
-
-// GET /users/1
-// app.get("/users/:id", db.getUser);
 
 // POST /users
 // app.post("/users", db.addUser);
