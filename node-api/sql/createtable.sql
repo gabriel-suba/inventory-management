@@ -19,14 +19,16 @@ CREATE TABLE users (
 	location INT REFERENCES locations(ID),
 	name VARCHAR(255) NOT NULL,
 	email VARCHAR(255) NOT NULL,
-	password VARCHAR(255) NOT NULL
+	password VARCHAR(255) NOT NULL,
+	active BOOLEAN
 );
 
 CREATE TABLE vendors (
 	ID SERIAL PRIMARY KEY,
 	name VARCHAR(255) NOT NULL,
 	email VARCHAR(255) NOT NULL,
-	phone VARCHAR(255)
+	phone VARCHAR(255),
+	active BOOLEAN
 );
 
 CREATE TABLE items (
@@ -35,5 +37,6 @@ CREATE TABLE items (
 	status INT REFERENCES status(ID),
 	vendor INT REFERENCES vendors(ID),
 	name VARCHAR(255) NOT NULL,
-	quantity INT NOT NULL
+	quantity INT NOT NULL,
+	active BOOLEAN
 );

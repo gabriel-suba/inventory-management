@@ -1,0 +1,22 @@
+
+| FIELDS                          |   STATUS    |
+-------------------------------------------------
+* For all: add "active" field     |     OK      |
+*                                 |             |
+- users                           |             |
+-- PUT (edit)                     |     OK      |
+-- DELETE                         |     OK      |
+-- LOGOUT (?)                     |             |
+-------------------------------------------------
+- items
+-- CRUD
+
+- vendors
+-- CRUD
+
+- locations
+-- CRUD
+
+- middlewares
+-- authentication
+-- authorization (check role)

@@ -1,0 +1,55 @@
+# GET ALL USERS
+GET http://localhost:3000/users
+Set-Cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiR2FicmllbCIsImVtYWlsIjoiZ2FicmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJsb2NhdGlvbiI6IkFuZ2VsZXMgQ2l0eSIsInBhc3N3b3JkIjoiJDJhJDEwJEMvakprcy4ueDZxNUNTLlZUZEVpVGUwSkdzbDBCN3lnbmtZbFlnSGtDU2tvOTZpa3A5L1ZxIn0sImlhdCI6MTcxODE4NDU4MSwiZXhwIjoxNzE4MjcwOTgxfQ.Hfsgg0S0AFcP4iUfBP91Yy2KN516ZSDp96O4taWcXoM; HttpOnly
+
+###
+# GET A USER
+GET http://localhost:3000/users/1
+
+###
+# UPDATE A USER
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+	"name": "Gabriel",
+	"password": "password1"
+}
+
+###
+# CREATE A USER
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+	"role": 1,
+	"location": 2,
+	"name": "Fake User",
+	"email": "fake@us.er.com",
+	"password": "password"
+}
+
+###
+# DELETE A USER
+DELETE http://localhost:3000/users/8
+
+###
+# Login
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+	"email": "gabriel@gmail.com",
+	"password": "password1"
+}
+
+###
+# Verify auth
+POST http://localhost:3000/users/login/check
+Content-Type: application/json
+Set-Cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiR2FicmllbCIsImVtYWlsIjoiZ2FicmllbEBnbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJsb2NhdGlvbiI6IkFuZ2VsZXMgQ2l0eSIsInBhc3N3b3JkIjoiJDJhJDEwJEMvakprcy4ueDZxNUNTLlZUZEVpVGUwSkdzbDBCN3lnbmtZbFlnSGtDU2tvOTZpa3A5L1ZxIn0sImlhdCI6MTcxODE4NDU4MSwiZXhwIjoxNzE4MjcwOTgxfQ.Hfsgg0S0AFcP4iUfBP91Yy2KN516ZSDp96O4taWcXoM; HttpOnly
+
+{
+	"email": "gab@gmail.com",
+	"password": "password"
+}

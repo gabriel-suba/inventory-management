@@ -33,33 +33,7 @@ const itemById = `
 	WHERE items.id = $1;
 `;
 
-const users = `
-	SELECT 
-		users.id AS ID,
-		users.name AS NAME,
-		users.email AS EMAIL,
-		roles.name AS ROLE,
-		locations.name AS LOCATION
-	FROM users
-	JOIN roles 
-		ON users.role = roles.id
-	JOIN locations 
-		ON users.location = locations.id;
-`;
-
-const userById = `
-	SELECT 
-		users.id AS ID,
-		users.name AS NAME,
-		users.email AS EMAIL,
-		roles.name AS ROLE,
-		locations.name AS LOCATION
-	FROM users
-	JOIN roles 
-		ON users.role = roles.id
-	JOIN locations 
-		ON users.location = locations.id
-	WHERE users.id = $1;
-`;
-
-module.exports = { items, itemById, users, userById };
+module.exports = {
+    items,
+    itemById,
+};
