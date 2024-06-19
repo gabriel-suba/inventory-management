@@ -9,8 +9,11 @@
 -- LOGOUT (?)                     |             |
 -------------------------------------------------
 - items
--- CRUD
-
+-- CRUD                                  OK
+-- include proper documentation          OK
+-- of schema for creation &
+-- deletion
+-------------------------------------------------
 - vendors
 -- CRUD
 

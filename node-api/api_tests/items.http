@@ -3,4 +3,29 @@ GET http://localhost:3000/items
 
 ###
 # GET AN ITEM
-GET http://localhost:3000/items/1
+GET http://localhost:3000/items/6
+
+###
+# CREATE ITEM
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+	"location": 3,
+	"status": 3,
+	"name": "Apple AirPods",
+	"quantity": 10
+}
+
+###
+# UPDATE AN ITEM
+PUT http://localhost:3000/items/1
+Content-Type: application/json
+
+{
+	"quantity": 50
+}
+
+###
+# DELETE ITEM
+DELETE http://localhost:3000/items/7
