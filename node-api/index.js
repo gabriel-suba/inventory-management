@@ -4,6 +4,8 @@ const app = express();
 
 const itemRoutes = require("./routes/itemRoutes");
 const userRoutes = require("./routes/userRoutes");
+const vendorRoutes = require("./routes/vendorRoutes");
+const locationRoutes = require("./routes/locationRoutes");
 
 var cors = require("cors");
 
@@ -19,6 +21,8 @@ app.use(cors());
 
 app.use("/users", userRoutes);
 app.use("/items", itemRoutes);
+app.use("/vendors", vendorRoutes);
+app.use("/locations", locationRoutes);
 
 // TODO:: CREATE A FRONTEND FIRST, DELETE/INACTIVATE USER - alter table to include inactive -> update * users inactive = false
 // CRUD:: USERS, VENDORS, ITEMS, LOCATIONS

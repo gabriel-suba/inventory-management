@@ -1,0 +1,28 @@
+# GET ALL LOCATIONS
+GET http://localhost:3000/locations
+
+###
+# GET A LOCATION
+GET http://localhost:3000/locations/6
+
+###
+# CREATE LOCATION
+POST http://localhost:3000/locations
+Content-Type: application/json
+
+{
+	"name": "TEST LOC"
+}
+
+###
+# UPDATE A LOCATION
+PUT http://localhost:3000/locations/4
+Content-Type: application/json
+
+{
+	"active": "false"
+}
+
+###
+# DELETE LOCATION
+DELETE http://localhost:3000/locations/6

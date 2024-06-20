@@ -1,0 +1,31 @@
+# GET ALL VENDORS
+GET http://localhost:3000/vendors
+
+###
+# GET A VENDOR
+GET http://localhost:3000/vendors/3
+
+###
+# CREATE VENDOR
+POST http://localhost:3000/vendors
+Content-Type: application/json
+
+{
+	"name": "Test Vendor",
+	"email": "test@vendor.com",
+	"phone": "+6391245679220"
+}
+
+###
+# UPDATE A VENDOR
+PUT http://localhost:3000/vendors/3
+Content-Type: application/json
+
+{
+	"name": "Test Vendor - 2",
+	"email": "test123@vendor.com"
+}
+
+###
+# DELETE VENDOR
+DELETE http://localhost:3000/vendors/3

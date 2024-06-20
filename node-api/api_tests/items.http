@@ -23,7 +23,7 @@ PUT http://localhost:3000/items/1
 Content-Type: application/json
 
 {
-	"quantity": 50
+	"quantity": 49
 }
 
 ###

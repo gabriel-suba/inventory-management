@@ -15,11 +15,11 @@
 -- deletion
 -------------------------------------------------
 - vendors
--- CRUD
+-- CRUD                                  OK
 
 - locations
--- CRUD
-
+-- CRUD                                  OK
+-------------------------------------------------
 - middlewares
 -- authentication
 -- authorization (check role)
