@@ -19,6 +19,9 @@
 
 - locations
 -- CRUD                                  OK
+
+- roles
+-- GET                                   OK
 -------------------------------------------------
 - middlewares
 -- authentication

@@ -1,0 +1,6 @@
+# GET ALL VENDORS
+GET http://localhost:3000/roles
+
+###
+# GET A VENDOR
+GET http://localhost:3000/roles/1
